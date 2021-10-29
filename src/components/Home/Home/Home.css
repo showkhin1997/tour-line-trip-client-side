@@ -1,0 +1,25 @@
+.banner-text-style{
+    background-color: rgb(241, 241, 241);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.welcome-text-banner{
+    font-size: 3vw;
+}
+.tour-text-banner{
+    color: rgb(255, 115, 21);
+    font-size: 60px;
+    font-weight: 900;
+    font-size: 6vw
+}
+.line-text-banner{
+    font-weight: 600;
+    font-size: 50px;
+    font-size: 5vw
+}
+.trip-text-banner{
+    font-weight: 600;
+    color: rgb(255, 115, 21);
+    font-size: 5vw
+}
