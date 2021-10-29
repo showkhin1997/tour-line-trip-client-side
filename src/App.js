@@ -7,6 +7,8 @@ import AddNewService from './components/AddNewService/AddNewService';
 import Login from './components/Login/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -24,8 +26,14 @@ function App() {
             <PrivateRoute path="/addnewservice">
               <AddNewService></AddNewService>
             </PrivateRoute>
+            <PrivateRoute path="/placeorder/:serviceId">
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </Router>
