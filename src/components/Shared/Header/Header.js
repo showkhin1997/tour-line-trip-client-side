@@ -29,7 +29,7 @@ const Header = () => {
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
                             <Nav.Link as={Link} to="/home" className="text-primary fw-bold">HOME</Nav.Link>
-                            <Nav.Link as={HashLink} to="#services" className="text-primary fw-bold">SERVICES</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#services" className="text-primary fw-bold">SERVICES</Nav.Link>
                             <Nav.Link as={Link} to="/about" className="text-primary fw-bold">ABOUT US</Nav.Link>
                             <Nav.Link as={Link} to="/contact" className="text-primary fw-bold">CONTACT US</Nav.Link>
                             <NavDropdown className="text-white fw-bold" title="ORDERS" id="collasible-nav-dropdown">
