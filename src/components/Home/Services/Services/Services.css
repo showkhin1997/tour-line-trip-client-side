@@ -1,0 +1,9 @@
+.section-title{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(255, 115, 21);
+    font-weight: 700;
+    font-size: 60px;
+    border-radius: 10px;
+}

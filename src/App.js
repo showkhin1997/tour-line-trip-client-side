@@ -7,7 +7,7 @@ import AddNewService from './components/AddNewService/AddNewService';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Header></Header>
         <Switch>
