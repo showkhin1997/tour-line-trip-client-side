@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { Container, Nav, Navbar, Button, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo.png';
 import './Header.css';
@@ -12,7 +13,7 @@ const Header = () => {
     return (
         <div>
             <>
-                <Navbar sticky="top" variant="dark" collapseOnSelect expand="lg" className="navbar-style">
+                <Navbar fixed="top" variant="dark" collapseOnSelect expand="lg" className="navbar-style">
                     <Container>
                         <Navbar.Brand href="#home" className="me-5">
                             <img
@@ -22,23 +23,28 @@ const Header = () => {
                                 height="30"
                                 className="d-inline-block align-top"
                             />{' '}
-                            <span className="tour-text">Toure</span>
+                            <span className="tour-text">Tour</span>
                             <span className="line-text tour-text">Line</span>
                             <span className="trip-text tour-text">Trip</span></Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link as={Link} to="/home" className="text-white">HOME</Nav.Link>
-                            <Nav.Link className="text-white">MY ORDERS</Nav.Link>
-                            <Nav.Link className="text-white">MANAGE ALL ORDERS</Nav.Link>
-                            <Nav.Link as={Link} to="/addnewservice" className="text-white">ADD NEW SERVICE</Nav.Link>
-                            <Nav.Link className="text-white">ABOUT US</Nav.Link>
+                            <Nav.Link as={Link} to="/home" className="text-primary fw-bold">HOME</Nav.Link>
+                            <Nav.Link as={HashLink} to="#services" className="text-primary fw-bold">SERVICES</Nav.Link>
+                            <Nav.Link as={Link} to="/about" className="text-primary fw-bold">ABOUT US</Nav.Link>
+                            <Nav.Link as={Link} to="/contact" className="text-primary fw-bold">CONTACT US</Nav.Link>
+                            <NavDropdown className="text-white fw-bold" title="ORDERS" id="collasible-nav-dropdown">
+                                <Nav.Link as={Link} to="/addnewservice" className="dropdown-text">MY ORDERS</Nav.Link>
+                                <Nav.Link as={Link} to="/addnewservice" className="dropdown-text">MANAGE ALL ORDERS</Nav.Link>
+                                <Nav.Link as={Link} to="/addnewservice" className="dropdown-text">ADD NEW SERVICE</Nav.Link>
+                            </NavDropdown>
+
                             {
                                 user?.email ? <Button onClick={logOut} className="logout-button me-2" variant="light">Log out</Button>
                                     :
                                     <Nav.Link as={Link} to="/login" className="login-button">Login</Nav.Link>
 
                             }
-                            <Navbar.Text className="text-light">
+                            <Navbar.Text className="text-dark">
                                 User: <small className="fw-bold">{user?.displayName}</small>
                             </Navbar.Text>
                         </Navbar.Collapse>

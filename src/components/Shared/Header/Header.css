@@ -1,5 +1,5 @@
 .navbar-style{
-    background-color: rgba(55, 0, 255, 0.932);
+    background-color: rgba(104, 104, 104, 0.288);
 }
 .tour-text{
     font-weight: 900;
@@ -13,10 +13,10 @@
     font-size: 20px;
 }
 .line-text{
-    color: rgb(185, 184, 184);
+    color: rgb(19, 19, 19);
 }
 .login-button{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 115, 21);
     font-weight: 600;
     font-size: 18px;
 }
@@ -25,7 +25,10 @@
 }
 .logout-button{
     background-color: rgb(218, 98, 19);
-    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 18px;
+    color: whitesmoke;
+}
+.dropdown-text{
+    font-size: 12px;
 }
