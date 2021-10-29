@@ -6,6 +6,7 @@ import Home from './components/Home/Home/Home';
 import AddNewService from './components/AddNewService/AddNewService';
 import Login from './components/Login/Login/Login';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -20,9 +21,9 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/addnewservice">
+            <PrivateRoute path="/addnewservice">
               <AddNewService></AddNewService>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
