@@ -22,11 +22,11 @@ const Header = () => {
                             <span className="trip-text tour-text">Trip</span></Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link className="text-white">HOME</Nav.Link>
+                            <Nav.Link className="text-white" href="home">HOME</Nav.Link>
                             <Nav.Link className="text-white">SERVICES</Nav.Link>
                             <Nav.Link className="text-white">MY ORDERS</Nav.Link>
                             <Nav.Link className="text-white">MANAGE ALL ORDERS</Nav.Link>
-                            <Nav.Link className="text-white">ADD NEW SERVICE</Nav.Link>
+                            <Nav.Link className="text-white" href="addnewservice">ADD NEW SERVICE</Nav.Link>
                             <Nav.Link className="text-white">ABOUT US</Nav.Link>
                             <Button className="logout-button" variant="light">Log out</Button>
                             <Nav.Link className="login-button">Login</Nav.Link>
