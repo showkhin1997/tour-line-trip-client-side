@@ -6,6 +6,30 @@ import './PlaceOrder.css';
 const PlaceOrder = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState({});
+    // const [addService, setAddService] = useState();
+
+    const handleAddServices = service => {
+        // console.log(service);
+        const name = service.name;
+        const price = service.price;
+
+        const order = { name, price };
+
+        fetch('http://localhost:5000/orders', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert('Service is added in My orders');
+                }
+            })
+
+    }
 
     useEffect(() => {
         fetch(`http://localhost:5000/services/${serviceId}`)
@@ -24,7 +48,7 @@ const PlaceOrder = () => {
                     <p class="card-text"><small class="text-muted">Day: {service.day}</small></p>
                     <p class="card-text"><small class="text-muted"> Adress: {service.address}</small></p>
                     <h5 className="mb-3">Price: ${service.price}</h5>
-                    <button className="btn btn logout-button">Place Order</button>
+                    <button onClick={() => handleAddServices(service)} className="btn btn logout-button">Add Service</button>
                     <Link to="/home">
                         <button type="button" class="btn btn-light ms-2 fw-bold">Back</button>
                     </Link>
