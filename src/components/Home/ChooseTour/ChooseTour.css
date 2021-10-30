@@ -1,0 +1,10 @@
+.font-awesome-icon{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(108, 108, 255);
+}
+.font-awesome-icon:hover{
+    color: rgb(255, 115, 21);
+    text-shadow: 2px 2px 20px gray;
+    transition: 0.3s;
+}
