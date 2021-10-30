@@ -1,0 +1,16 @@
+.offer-container{
+    margin-top: 80px;
+}
+.bg-style{
+    background-color: rgba(221, 221, 221, 0.658);
+}
+.offer-container p{
+   text-align: center;
+}
+.offer-container img{
+    border-radius: 10px;
+}
+.offer-container img:hover{
+   box-shadow: 2px 2px 20px gray;
+   transition: 0.2s;
+}
