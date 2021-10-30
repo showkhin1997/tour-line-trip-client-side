@@ -6,10 +6,8 @@ import './PlaceOrder.css';
 const PlaceOrder = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState({});
-    // const [addService, setAddService] = useState();
 
     const handleAddServices = service => {
-        // console.log(service);
         const name = service.name;
         const price = service.price;
 

@@ -11,6 +11,10 @@ import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import NotFound from './components/NotFound/NotFound';
 import MyOrders from './components/MyOrders/MyOrders';
 import OrderConfirm from './components/OrderConfirm/OrderConfirm';
+import ManageAllServices from './components/Dashborad/ManageAllProducts/ManageAllServices';
+import UpdateService from './components/Dashborad/UpdateService/UpdateService';
+
+
 
 function App() {
   return (
@@ -31,15 +35,21 @@ function App() {
             <PrivateRoute path="/placeorder/:serviceId">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-            <Route path="/myorders">
+            <PrivateRoute path="/myorders">
               <MyOrders></MyOrders>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <ManageAllServices></ManageAllServices>
+            </PrivateRoute>
+            <PrivateRoute path="/services/updateservice/:id">
+              <UpdateService></UpdateService>
+            </PrivateRoute>
             <PrivateRoute path="/orderconfirm">
               <OrderConfirm></OrderConfirm>
             </PrivateRoute>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

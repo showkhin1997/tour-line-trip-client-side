@@ -44,6 +44,10 @@ const OrderConfirm = () => {
                 <input placeholder="Address" defaultValue="" {...register("address")} />
                 <input placeholder="City" defaultValue="" {...register("city")} />
                 <input placeholder="Phone Number" defaultValue="" {...register("phone")} />
+                <label htmlFor="check-in" className="fw-bold">Check-in</label>
+                <input type="date" placeholder="Check-in" defaultValue="" {...register("checkIn")} />
+                <label htmlFor="check-out" className="fw-bold">Check-out</label>
+                <input type="date" placeholder="Check-out" defaultValue="" {...register("checkOut")} />
                 <input type="submit" className="logout-button btn" value="Placed Order" />
             </form>
         </div>
