@@ -6,16 +6,16 @@ const Offers = () => {
         <div className="mb-5 offer-container">
             <h2 className="text-center mb-5 section-title">Last Minute Offers</h2>
             <p className="text-center mt-1 w-50 mx-auto text-muted fst-italic">Book a memorable tour at great price! Grab our last minute offer and pack the things for the journey you dream about. See our recommendations.</p>
-            <div class="container mb-5 bg-style mt-5 p-2">
-                <div class="row">
-                    <div class="col-md-8">
+            <div className="container mb-5 bg-style mt-5 p-2">
+                <div className="row">
+                    <div className="col-md-8">
                         <img className="img-fluid" src="https://i.ibb.co/MnF0kSt/1.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">10% off</small> <br />
                             China Temple
                         </p>
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div className="col-6 col-md-4">
                         <img className="img-fluid" src="https://i.ibb.co/WPNDn23/2.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">30% off</small> <br />
@@ -23,22 +23,22 @@ const Offers = () => {
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 col-md-4">
+                <div className="row">
+                    <div className="col-6 col-md-4">
                         <img className="img-fluid" src="https://i.ibb.co/P4nFFfB/3.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">15% off</small> <br />
                             Mexico
                         </p>
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div className="col-6 col-md-4">
                         <img className="img-fluid" src="https://i.ibb.co/v301YMX/4.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">26% off</small> <br />
                             Europe
                         </p>
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div className="col-6 col-md-4">
                         <img className="img-fluid" src="https://i.ibb.co/q1zF4HR/5.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">45% off</small> <br />
@@ -46,15 +46,15 @@ const Offers = () => {
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
+                <div className="row">
+                    <div className="col-6">
                         <img className="img-fluid" src="https://i.ibb.co/zXfZDYv/6.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">35% off</small> <br />
                             Alaska
                         </p>
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                         <img className="img-fluid" src="https://i.ibb.co/7zzfvsq/7.jpg" alt="" />
                         <p className="fw-bold">
                             <small className="text-primary">20% off</small> <br />
