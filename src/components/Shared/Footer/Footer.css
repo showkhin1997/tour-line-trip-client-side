@@ -1,0 +1,31 @@
+.footer-container{
+    background-color: rgba(231, 231, 231, 0.808);
+    padding: 40px;
+    margin-top: 180px;
+}
+.title-img-style{
+    width: 200px;
+}
+.contuct-icon{
+    margin-top: 20px;
+    color: rgb(26, 26, 26);
+    font-weight: 400;
+}
+.input-subscribe{
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 90%;
+    padding: 5px;
+}
+.subcribe-text{
+    font-size: 30px;
+    color: rgb(255, 102, 0);
+    font-weight: 600;
+    width: 50%;
+}
+.social-fab-icon{
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(255, 106, 60);
+}
+

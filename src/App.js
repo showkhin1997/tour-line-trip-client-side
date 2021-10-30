@@ -13,6 +13,7 @@ import OrderConfirm from './components/OrderConfirm/OrderConfirm';
 import ManageAllServices from './components/Dashborad/ManageAllProducts/ManageAllServices';
 import UpdateService from './components/Dashborad/UpdateService/UpdateService';
 import MyOrders from './components/MyOrders/MyOrders/MyOrders';
+import Footer from './components/Shared/Footer/Footer';
 
 
 
@@ -54,6 +55,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>

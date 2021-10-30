@@ -7,7 +7,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div className="container">
+        <div className="container" id="home">
             <div className="banner-text-style">
                 <h1 className="banner-text">
                     <span className="me-3 word-wrap welcome-text-banner">WELCOME</span>
