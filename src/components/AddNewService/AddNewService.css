@@ -1,3 +1,7 @@
+.add-service{
+    margin-top: 80px;
+}
+
 .add-service form{
     display: flex;
     flex-direction: column;
