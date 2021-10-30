@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import MyOrder from './MyOrder/MyOrder';
+import MyOrder from '../MyOrder/MyOrder';
 import './MyOrders.css';
 
 const MyOrders = () => {
@@ -33,7 +33,7 @@ const MyOrders = () => {
 
     return (
         <div className="my-orders-container">
-            <h2 className="text-center mb-4">Please Confirm Your Service</h2>
+            <h2 className="text-center mb-4 section-title">Please Confirm Your Service</h2>
             <Table striped bordered hover className="container">
                 <thead>
                     <tr>

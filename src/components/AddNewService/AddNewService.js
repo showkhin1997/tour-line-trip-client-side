@@ -17,7 +17,7 @@ const AddNewService = () => {
 
     return (
         <div className="add-service">
-            <h2 className="mb-5 text-center">Please add new Service</h2>
+            <h2 className="mb-5 text-center section-title">Please add new Service</h2>
 
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder="Place Name" />

@@ -41,7 +41,7 @@ const ManageAllServices = () => {
 
     return (
         <div className="dashboard-container container mb-5">
-            <h2 className="text-center mb-4">Manage All Services</h2>
+            <h2 className="text-center mb-4 section-title">DASHBOARD</h2>
 
             {/* show all users */}
             <div>
@@ -54,7 +54,6 @@ const ManageAllServices = () => {
                             <th scope="col">Phone</th>
                             <th scope="col">Check-in</th>
                             <th scope="col">Check-out</th>
-                            <th scope="col">Service</th>
                         </tr>
                     </thead>
                     <tbody>

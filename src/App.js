@@ -9,10 +9,10 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import NotFound from './components/NotFound/NotFound';
-import MyOrders from './components/MyOrders/MyOrders';
 import OrderConfirm from './components/OrderConfirm/OrderConfirm';
 import ManageAllServices from './components/Dashborad/ManageAllProducts/ManageAllServices';
 import UpdateService from './components/Dashborad/UpdateService/UpdateService';
+import MyOrders from './components/MyOrders/MyOrders/MyOrders';
 
 
 

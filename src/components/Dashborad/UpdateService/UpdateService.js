@@ -75,7 +75,7 @@ const UpdateService = () => {
 
     return (
         <div className="update-service-container mb-5">
-            <h1 className="mb-5 text-center">Please Update Service</h1>
+            <h1 className="mb-5 text-center section-title">Update Service</h1>
 
             <Form className="container w-100 mx-auto" onSubmit={handleUpdateProduct}>
                 <Form.Group className="mb-3" controlId="formBasicPassword">

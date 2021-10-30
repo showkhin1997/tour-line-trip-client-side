@@ -10,7 +10,6 @@ const ManageAllService = ({ confirmOrder }) => {
             <td>{phone}</td>
             <td>{checkIn}</td>
             <td>{checkOut}</td>
-            <td>{checkOut}</td>
         </tr>
     );
 };
