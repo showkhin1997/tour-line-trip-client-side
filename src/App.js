@@ -10,6 +10,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import NotFound from './components/NotFound/NotFound';
 import MyOrders from './components/MyOrders/MyOrders';
+import OrderConfirm from './components/OrderConfirm/OrderConfirm';
 
 function App() {
   return (
@@ -30,12 +31,15 @@ function App() {
             <PrivateRoute path="/placeorder/:serviceId">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-            <PrivateRoute path="/myorders">
+            <Route path="/myorders">
               <MyOrders></MyOrders>
-            </PrivateRoute>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/orderconfirm">
+              <OrderConfirm></OrderConfirm>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

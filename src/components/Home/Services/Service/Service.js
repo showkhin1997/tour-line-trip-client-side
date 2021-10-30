@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
+
     const { name, country, description, img, price, _id } = service;
+
     return (
         <div className="col p-4">
             <div className="card h-100">
