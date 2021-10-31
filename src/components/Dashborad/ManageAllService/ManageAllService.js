@@ -9,6 +9,8 @@ const ManageAllService = ({ confirmOrder }) => {
     }
 
     const { userName, email, phone, checkIn, checkOut } = confirmOrder;
+
+    console.log(confirmOrder.service.length)
     return (
         <tr>
             <td>{userName}</td>
@@ -16,8 +18,8 @@ const ManageAllService = ({ confirmOrder }) => {
             <td className="text-break">{phone}</td>
             <td>{checkIn}</td>
             <td>{checkOut}</td>
-            <td>{confirmOrder.service[0].name}</td>
-            <td>{confirmOrder.service[0].price}</td>
+            <td>{confirmOrder.service[0]?.name}</td>
+            <td>{confirmOrder.service[0]?.price}</td>
             <button className="btn btn" onClick={() => handleApproved(true)}>{!isApproved ? 'Procced' : 'Approved'}</button>
         </tr>
     );
