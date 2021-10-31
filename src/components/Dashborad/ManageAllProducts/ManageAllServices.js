@@ -7,6 +7,7 @@ import './ManageAllServices.css';
 const ManageAllServices = () => {
     const [confirmOrders, setConfirmOrders] = useState([]);
     const [services, setServices] = useState([]);
+    const [users, setUsers] = useState([]);
 
 
     // For confirm orders and users
@@ -25,7 +26,7 @@ const ManageAllServices = () => {
 
     // handle Delete service
     const handleDeleteService = id => {
-        const procced = window.confirm('Are you want to delete the Service?');
+        const procced = window.confirm('Are you  you want to delete the Service?');
         if (procced) {
             const url = `https://shrouded-refuge-04791.herokuapp.com/services/${id}`;
             fetch(url, {
@@ -36,6 +37,25 @@ const ManageAllServices = () => {
                     if (data.deletedCount) {
                         const remaining = services.filter(service => service._id !== id);
                         setServices(remaining);
+                    }
+                })
+        }
+    }
+
+    // handle delete users
+    const handleDeleteUsers = id => {
+        const procced = window.confirm('Are you  want to delete the User?');
+        if (procced) {
+            const url = `https://shrouded-refuge-04791.herokuapp.com/confirmOrder/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount) {
+                        alert('User is Deleted');
+                        const remaining = users.filter(user => user._id !== id);
+                        setUsers(remaining);
                     }
                 })
         }
@@ -58,6 +78,7 @@ const ManageAllServices = () => {
                             <th>Check-out</th>
                             <th>Service</th>
                             <th>Price</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,6 +86,7 @@ const ManageAllServices = () => {
                             confirmOrders.map(confirmOrder => <ManageAllService
                                 key={confirmOrder._id}
                                 confirmOrder={confirmOrder}
+                                handleDeleteUsers={handleDeleteUsers}
                             ></ManageAllService>)
                         }
                     </tbody>

@@ -14,7 +14,7 @@ const MyOrders = () => {
     }, [])
 
     const handleDeleteService = id => {
-        const procced = window.confirm('Are you sure you want to delete the Service?');
+        const procced = window.confirm('Are you sure you want to remove the Service?');
         if (procced) {
             const url = `https://shrouded-refuge-04791.herokuapp.com/orders/${id}`;
             fetch(url, {
