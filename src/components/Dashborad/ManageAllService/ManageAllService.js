@@ -6,8 +6,8 @@ const ManageAllService = ({ confirmOrder }) => {
     return (
         <tr>
             <td>{userName}</td>
-            <td>{email}</td>
-            <td>{phone}</td>
+            <td className="text-break">{email}</td>
+            <td className="text-break">{phone}</td>
             <td>{checkIn}</td>
             <td>{checkOut}</td>
         </tr>

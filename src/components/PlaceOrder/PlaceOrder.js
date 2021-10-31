@@ -13,7 +13,7 @@ const PlaceOrder = () => {
 
         const order = { name, price };
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://shrouded-refuge-04791.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const PlaceOrder = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://shrouded-refuge-04791.herokuapp.com/services/${serviceId}`)
             .then(result => result.json())
             .then(data => setService(data))
     }, [])

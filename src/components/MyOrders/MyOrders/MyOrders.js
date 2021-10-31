@@ -8,7 +8,7 @@ const MyOrders = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://shrouded-refuge-04791.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -16,7 +16,7 @@ const MyOrders = () => {
     const handleDeleteService = id => {
         const procced = window.confirm('Are you sure you want to delete the Service?');
         if (procced) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://shrouded-refuge-04791.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

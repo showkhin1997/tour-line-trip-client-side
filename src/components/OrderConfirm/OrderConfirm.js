@@ -10,7 +10,7 @@ const OrderConfirm = () => {
     const onSubmit = data => {
         data.service = selectService;
 
-        fetch('http://localhost:5000/confirmOrder', {
+        fetch('https://shrouded-refuge-04791.herokuapp.com/confirmOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ const OrderConfirm = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://shrouded-refuge-04791.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setSelectService(data))
     }, [])
