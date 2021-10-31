@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Service.css';
 
 const Service = ({ service }) => {
 
@@ -6,8 +7,8 @@ const Service = ({ service }) => {
 
     return (
         <div className="col p-4">
-            <div className="card h-100">
-                <img src={img} className="card-img-top" alt="..." />
+            <div className="card h-100 border-0 card-custom-style">
+                <img src={img} className="card-img-top img-style" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <small>Country: {country}</small>

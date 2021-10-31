@@ -1,0 +1,12 @@
+.card-custom-style{
+    box-shadow: 2px 2px 20px rgb(184, 184, 184);
+    padding: 5px;
+    border-radius: 6px;
+}
+.card-custom-style:hover{
+    box-shadow: 2px 2px 20px rgb(107, 129, 255);
+    transition: 0.6s;
+}
+.img-style{
+    border-radius: 8px;
+}
