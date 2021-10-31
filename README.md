@@ -4,7 +4,7 @@ This project was created by bootstrapped, react, react route, firebase, heroku, 
 
 
 ### `Backend code Link`
-MongoDb and Node [Server side repo](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-showkhin1997) to view it in the browser.
+MongoDb and Node [Server side repo](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-showkhin1997)
 
 # Usases Of this project
 - it is user friendly and anybody can booking to set their tour plan
