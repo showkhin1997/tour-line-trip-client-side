@@ -3,7 +3,7 @@ import './Offers.css';
 
 const Offers = () => {
     return (
-        <div className="mb-5 offer-container">
+        <div className="mb-5 offer-container" id="offers">
             <h2 className="text-center mb-5 section-title">Last Minute Offers</h2>
             <p className="text-center mt-1 w-50 mx-auto text-muted fst-italic">Book a memorable tour at great price! Grab our last minute offer and pack the things for the journey you dream about. See our recommendations.</p>
             <div className="container mb-5 bg-style mt-5 p-2">
