@@ -8,6 +8,7 @@ const ManageAllServices = () => {
     const [confirmOrders, setConfirmOrders] = useState([]);
     const [services, setServices] = useState([]);
 
+
     // For confirm orders and users
     useEffect(() => {
         fetch('https://shrouded-refuge-04791.herokuapp.com/confirmOrder')
@@ -47,7 +48,6 @@ const ManageAllServices = () => {
             {/* show all users */}
             <div className="container">
                 <h5 className="mt-5 mb-2 text-center">Manage All Users</h5>
-
                 <Table striped bordered hover responsive>
                     <thead>
                         <tr>
@@ -56,6 +56,8 @@ const ManageAllServices = () => {
                             <th>Phone</th>
                             <th>Check-in</th>
                             <th>Check-out</th>
+                            <th>Service</th>
+                            <th>Price</th>
                         </tr>
                     </thead>
                     <tbody>
